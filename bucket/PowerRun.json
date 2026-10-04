@@ -1,47 +1,27 @@
 {
-    "version": "1.6",
-    "description": "PowerRun (Run with highest privileges) 可以使用TrustedInstaller/System的权限来启动一些程序 (Scoop bucket by arch3rpro)",
-    "homepage": "https://www.sordum.org/downloads/?power-run",
-    "license": "Freeware",
-    "url": "https://www.sordum.org/files/download/power-run/PowerRun.zip",
-    "hash": "e1d8c7eec1ed711e51494fc841f1a8c98198e559a26c11cf1eed36bb9487245d",
-    "extract_dir": "PowerRun",
-    "architecture": {
-        "32bit": {
-            "shortcuts": [
-                [
-                    "PowerRun.exe",
-                    "PowerRun"
-                ]
-            ],
-            "bin": [
-                [
-                    "PowerRun.exe",
-                    "PowerRun"
-                ]
-            ]
-        },
-        "64bit": {
-            "shortcuts": [
-                [
-                    "PowerRun_x64.exe",
-                    "PowerRun"
-                ]
-            ],
-            "bin": [
-                [
-                    "PowerRun_x64.exe",
-                    "PowerRun"
-                ]
-            ]
-        }
+  "architecture": {
+    "32bit": {
+      "bin": [ [ "PowerRun.exe", "PowerRun" ] ],
+      "shortcuts": [ [ "PowerRun.exe", "PowerRun" ] ]
     },
-    "persist": "PowerRun.ini",
-    "checkver": {
-        "url": "https://www.sordum.org/downloads/?power-run",
-        "regex": "PowerRun v([\\d.]+)</title>"
-    },
-    "autoupdate": {
-        "url": "https://www.sordum.org/files/download/power-run/PowerRun.zip"
+    "64bit": {
+      "bin": [ [ "PowerRun_x64.exe", "PowerRun" ] ],
+      "shortcuts": [ [ "PowerRun_x64.exe", "PowerRun" ] ]
     }
+  },
+  "autoupdate": {
+    "url": "https://www.sordum.org/files/download/power-run/PowerRun.zip"
+  },
+  "checkver": {
+    "regex": "PowerRun v([\\d.]+)</title>",
+    "url": "https://www.sordum.org/downloads/?power-run"
+  },
+  "description": "PowerRun (Run with highest privileges) 可以使用TrustedInstaller/System的权限来启动一些程序 (Scoop bucket by arch3rpro)",
+  "extract_dir": "PowerRun",
+  "hash": "e1d8c7eec1ed711e51494fc841f1a8c98198e559a26c11cf1eed36bb9487245d",
+  "homepage": "https://www.sordum.org/downloads/?power-run",
+  "license": "Freeware",
+  "persist": "PowerRun.ini",
+  "url": "https://www.sordum.org/files/download/power-run/PowerRun.zip",
+  "version": "1.6"
 }

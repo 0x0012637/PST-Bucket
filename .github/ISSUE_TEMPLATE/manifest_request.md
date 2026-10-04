@@ -1,9 +1,10 @@
 ---
+
 name: New manifest request
 about: Request new manifest to be added into this bucket.
 title: '[Request] Add %%applicationName%%'
 labels: request, help wanted
----
+----------------------------
 
 <!-- Adjust prefilled title with correct name of application -->
 <!-- Please provide following information: -->

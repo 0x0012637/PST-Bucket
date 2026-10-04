@@ -1,39 +1,29 @@
 {
-    "version": "1.21",
-    "description": "See who owns an Internet address.(Scoop bucket by arch3rpro)",
-    "homepage": "https://learn.microsoft.com/sysinternals/downloads/whois",
-    "license": {
-        "identifier": "Freeware",
-        "url": "https://learn.microsoft.com/sysinternals/license-terms"
+  "architecture": {
+    "32bit": {
+      "bin": "whois.exe"
     },
-    "url": "https://download.sysinternals.com/files/WhoIs.zip",
-    "hash": "43d82eb09a93c788030b31668a1b578d4953c52875dccf5c5ebc98059fa834a1",
-    "architecture": {
-        "64bit": {
-            "bin": [
-                [
-                    "whois64.exe",
-                    "whois"
-                ]
-            ]
-        },
-        "32bit": {
-            "bin": "whois.exe"
-        },
-        "arm64": {
-            "bin": [
-                [
-                    "whois64a.exe",
-                    "whois"
-                ]
-            ]
-        }
+    "64bit": {
+      "bin": [ [ "whois64.exe", "whois" ] ]
     },
-    "checkver": {
-        "url": "https://raw.githubusercontent.com/MicrosoftDocs/sysinternals/main/sysinternals/downloads/whois.md",
-        "regex": "#.*?v([\\d.]+)"
-    },
-    "autoupdate": {
-        "url": "https://download.sysinternals.com/files/WhoIs.zip"
+    "arm64": {
+      "bin": [ [ "whois64a.exe", "whois" ] ]
     }
+  },
+  "autoupdate": {
+    "url": "https://download.sysinternals.com/files/WhoIs.zip"
+  },
+  "checkver": {
+    "regex": "#.*?v([\\d.]+)",
+    "url": "https://raw.githubusercontent.com/MicrosoftDocs/sysinternals/main/sysinternals/downloads/whois.md"
+  },
+  "description": "See who owns an Internet address.(Scoop bucket by arch3rpro)",
+  "hash": "43d82eb09a93c788030b31668a1b578d4953c52875dccf5c5ebc98059fa834a1",
+  "homepage": "https://learn.microsoft.com/sysinternals/downloads/whois",
+  "license": {
+    "identifier": "Freeware",
+    "url": "https://learn.microsoft.com/sysinternals/license-terms"
+  },
+  "url": "https://download.sysinternals.com/files/WhoIs.zip",
+  "version": "1.21"
 }
